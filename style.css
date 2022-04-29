@@ -132,19 +132,20 @@ header {
     transition-duration: 0.5s;
     box-shadow: 0 5px 5px rgba(0,0,0,0.3);
     border-radius: 5px;
-    cursor: default;
+    pointer-events: none;
 }
 
 .background__basket__hidden {
     position: relative;
 }
 
-.hidden__list:hover {
-    display: none;
-}
+/*.hidden__list:hover {*/
+/*    display: none;*/
+/*}*/
 
-.background__basket__hidden:hover .hidden__list  {
+.background__basket:hover + .hidden__list  {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .check__content {
