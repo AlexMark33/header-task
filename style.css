@@ -1,0 +1,167 @@
+/*modificators*/
+.background_black {
+  background-color:  rgb(34, 34, 34);
+}
+
+.background_red {
+  background-color: hsla(0, 78.72%, 63.14%, 1);
+}
+
+.link_text-decoration {
+  text-decoration: none;
+  color: white;
+}
+
+.button_decoration {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+}
+
+.max-width_modificator {
+  max-width: 80%;
+}
+
+.menu-nav_item {
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: none;
+  transition-duration: .3s;
+}
+/*modificators*/
+
+/*blocks*/
+.header__main-block {
+  display: flex;
+  min-height: 72px;
+  justify-content: center;
+}
+/*blocks*/
+
+/*for checking*/
+html {
+  height: 3000px;
+}
+/*for checking*/
+
+body {
+  font-size: 18px;
+  font-family: 'Sen', sans-serif;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+/*can i use this in classes*/
+header a:visited {
+  color: white;
+}
+
+/*first (black) part of header*/
+.header__main-block__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.items__round-content {
+  padding: 4px 20px 4px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.items__text-content {
+  color: white;
+}
+/*first (black) part of header*/
+
+/*second (red) part of header*/
+.header__main-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__main-content__logo {
+  line-height: 0;
+}
+
+.header__main-content__menu-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.header__main-content__menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-nav_item:hover {
+  background-color: rgb(34, 34, 34);
+}
+
+.header__main-content__basket-items {
+  position: relative;
+}
+
+.basket-items__wrapper {
+  display: flex;
+  position: relative;
+  min-height: 30px;
+  min-width: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  line-height: 0;
+}
+
+.basket-items__img {
+  width: 25px;
+}
+
+.basket-items__amount-purchases-wrapper {
+  position: absolute;
+  right: -15%;
+  top: -20%;
+  text-align: center;
+}
+
+.basket-items__amount-purchases {
+  font-size: 11px;
+  background-color: #ffffff;
+  padding: 8px 6px;
+  border-radius: 50%;
+  font-weight: bolder;
+}
+
+.basket-items__hidden-list {
+  position: absolute;
+  top: 30px;
+  right: 48px;
+  max-height: 400px;
+  width: 400px;
+  background-color: grey;
+  opacity: 0;
+  transition-duration: 0.5s;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.basket-items__wrapper:hover + .basket-items__hidden-list {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*second (red) part of header*/
