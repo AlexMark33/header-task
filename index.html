@@ -11,64 +11,33 @@
   <link rel="icon" href="https://d3e54v103j8qbb.cloudfront.net/static/designer_favicon.5ea478d03e.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Sen&display=swap"
         rel="stylesheet">
-  </head>
+</head>
 
 <body>
-  <header>
-    <a class="link_text-decoration" href="#">
-      <div class="header__main-block background_black">
-        <div class="header__main-block__items max-width_modificator">
-            <div class="items__round-content-wrapper">
-              <div class="items__round-content background_red">Announcement</div>
-            </div>
-            <div class="items__text-content-wrapper">
-              <div class="items__text-content">How we're responding to COVID-19</div>
-            </div>
-        </div>
-      </div>
+  <header class="header">
+    <a class="header__announce background_black link_text-decoration" href="#">
+      <span class="header__text_red-round">Announcement</span>
+      <span class="header__text">How we're responding to COVID-19</span>
     </a>
 
     <div class="header__main-block background_red">
       <div class="header__main-content max-width_modificator">
-        <div class="header__main-content__logo-wrapper">
-          <div class="header__main-content__logo">
-            <button class="button_decoration" href="#"><img
-               src="https://uploads-ssl.webflow.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
-               alt="acme logo"></button>
-          </div>
-        </div>
-        <div class="header__main-content__menu-wrapper">
-          <div class="header__main-content__menu">
-            <div class="menu-nav_item">
-              <a class="link_text-decoration" href="#">Home</a>
-            </div>
-            <div class="menu-nav_item">
-              <a class="link_text-decoration" href="#">About</a>
-            </div>
-            <div class="menu-nav_item">
-              <a class="link_text-decoration" href="#">Shop</a>
-            </div>
-            <div class="menu-nav_item">
-              <a class="link_text-decoration" href="#">Donate</a>
-            </div>
-            <div class="menu-nav_item">
-              <a class="link_text-decoration" href="#">Contact</a>
-            </div>
-          </div>
-        </div>
-        <div class="header__main-content__basket-items">
-          <div class="basket-items__wrapper">
-            <button class="button_decoration" href="#">
-                <div class="basket-items__wrapper background_black">
-                  <img class="basket-items__img" src="https://uploads-ssl.webflow.com/5e7ff3ec0c4ef4c974fa99e3/5e86146bb854797d12a30a13_cart.svg"
-                       alt="basket logo">
-                  <div class="basket-items__amount-purchases-wrapper">
-                    <div class="basket-items__amount-purchases">3</div>
-                  </div>
-                </div>
-            </button>
-            </div>
-          <div class="basket-items__hidden-list">
+        <button class="header__logo button_decoration" href="#">
+          <img src="https://uploads-ssl.webflow.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg" alt="ACME logo">
+        </button>
+        <nav class="header__nav-menu black-transition">
+          <a class="link_text-decoration" href="#">Home</a>
+          <a class="link_text-decoration" href="#">About</a>
+          <a class="link_text-decoration" href="#">Shop</a>
+          <a class="link_text-decoration" href="#">Donate</a>
+          <a class="link_text-decoration" href="#">Contact</a>
+        </nav>
+        <div class="header__basket-wrapper">
+          <button class="header__basket button_decoration">
+            <img class="basket__logo" src="https://uploads-ssl.webflow.com/5e7ff3ec0c4ef4c974fa99e3/5e86146bb854797d12a30a13_cart.svg" alt="Basket logo">
+            <span class="basket__mount-purchases">3</span>
+          </button>
+          <div class="basket__hidden-list">
             <ol>
               <li>Something</li>
               <li>Something else</li>
